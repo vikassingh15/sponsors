@@ -1,0 +1,139 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Sponsor",
+		"_postman_id": "a425fe1a-a322-0b5d-e937-6a1f44e455ba",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"Authorization\", jsonData.access_token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/u/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJhdWRpZW5jZSI6IndlYiIsImNyZWF0ZWQiOjE1MDgyNjQzMzg2ODMsImV4cCI6MTUwODM1MDczOH0.4jAuzwmARzEvDICxppSpRglhIXIReUPyIqaliq9mxFQE5xYqLeT4r6eqJZKI6p96cp57yd7gxrcBNuJ8zRpntw",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\": \"password\",\r\n  \"rememberme\": false,\r\n  \"email\": \"manager1@gmail.com\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllStaffBySponsor",
+			"request": {
+				"url": "http://localhost:8080/api/sponsor/1/staff",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SearchStaff",
+			"request": {
+				"url": "http://localhost:8080/api/sponsor/searchByName/spon/staff",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetCandidateById",
+			"request": {
+				"url": "http://localhost:8080/api/sponsor/1/candidate",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SearchCandidateBySponsorOrganizationname",
+			"request": {
+				"url": "http://localhost:8080/api/sponsor/searchByName/spon/candidate",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SearchCandidateByStatusId",
+			"request": {
+				"url": "http://localhost:8080/api/candidates/status/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CandidateRepoer",
+			"request": {
+				"url": "http://localhost:8080/api/reports/candidate",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
