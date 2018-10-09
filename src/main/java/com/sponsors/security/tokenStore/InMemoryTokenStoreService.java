@@ -3,12 +3,12 @@ package com.sponsors.security.tokenStore;
 import com.sponsors.dto.AccessTokenContainer;
 import com.sponsors.dto.AccessTokenModel;
 import com.sponsors.util.DateUtils;
-import org.springframework.stereotype.Service;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
-@Service
+@Configuration
 public class InMemoryTokenStoreService extends AbstractTokenStore implements TokenStoreService {
 
 	private ConcurrentHashMap<String, AccessTokenModel> token = new ConcurrentHashMap<>();

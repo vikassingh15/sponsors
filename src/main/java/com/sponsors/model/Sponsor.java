@@ -23,6 +23,8 @@ public class Sponsor {
 
   private String address;
 
+  private String category;
+
   @OneToMany(mappedBy = "sponsor")
   private List<Staff> staff;
 
@@ -87,5 +89,13 @@ public class Sponsor {
 
   public void setCandidates(List<Candidate> candidates) {
     this.candidates = candidates;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public void setCategory(String category) {
+    this.category = category;
   }
 }

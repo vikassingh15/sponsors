@@ -28,7 +28,6 @@ import org.springframework.web.filter.GenericFilterBean;
 public class AuthenticationTokenProcessingFilter extends GenericFilterBean {
 
 	private final TokenStoreService tokenStoreService;
-
 	private final String principal;
 	private final List<GrantedAuthority> authorities;
 

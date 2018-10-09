@@ -11,7 +11,8 @@ public class NotFoundException extends BaseException {
 	public enum NotFound {
 		SPONSOR_NOT_FOUND("4040001", "No matching sponsors found.", "No matching sponsors found with given details."),
 		CANDIDATE_NOT_FOUND("4040002", "No matching candidate found.", "No matching candidate found with given details."),
-		USER_NOT_FOUND("4040003", "No matching user found.", "No matching user found with given details.");
+		USER_NOT_FOUND("4040003", "No matching user found.", "No matching user found with given details."),
+		CASE_STATUS_NOT_FOUND("4040004", "Case status not found.", "Case status not found.");
 
 		private String statusCode;
 		private String errorMessage;

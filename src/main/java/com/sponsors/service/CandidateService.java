@@ -11,4 +11,6 @@ public interface CandidateService {
     List<Candidate> getAllCandidates();
 
     Candidate getCandidateById(long id);
+
+    void changeStatus(long candidateId, long currentStatusId);
 }

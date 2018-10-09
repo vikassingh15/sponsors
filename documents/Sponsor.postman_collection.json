@@ -53,7 +53,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTA0MjYwMDEwMSwiZXhwZGF0ZSI6MTUzOTEyOTAwMDEwMX0.ccjKam5izZE6OnxMfrk4WwPbDVooJ6vNKmh8emg3DBt-I7CUlbcaH07EKamyBFb2Ci8A0Kl_3inl22FwmAYi3w",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
 						"description": ""
 					}
 				],
@@ -70,7 +75,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTA0MjYwMDEwMSwiZXhwZGF0ZSI6MTUzOTEyOTAwMDEwMX0.ccjKam5izZE6OnxMfrk4WwPbDVooJ6vNKmh8emg3DBt-I7CUlbcaH07EKamyBFb2Ci8A0Kl_3inl22FwmAYi3w",
 						"description": ""
 					}
 				],
@@ -87,7 +92,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTA0MjYwMDEwMSwiZXhwZGF0ZSI6MTUzOTEyOTAwMDEwMX0.ccjKam5izZE6OnxMfrk4WwPbDVooJ6vNKmh8emg3DBt-I7CUlbcaH07EKamyBFb2Ci8A0Kl_3inl22FwmAYi3w",
 						"description": ""
 					}
 				],
@@ -104,7 +109,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTAzMDg4OTkxMSwiZXhwZGF0ZSI6MTUzOTExNzI4OTkxMX0.6FVob1p8nRDT1Ekw_jaquJOyc7VRhKvuuLtpNaDxPl6lnyT4go7V8ETn3dza4B-gZ2rWmEBF5rXC9dR1FPxpCA",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTA0MjYwMDEwMSwiZXhwZGF0ZSI6MTUzOTEyOTAwMDEwMX0.ccjKam5izZE6OnxMfrk4WwPbDVooJ6vNKmh8emg3DBt-I7CUlbcaH07EKamyBFb2Ci8A0Kl_3inl22FwmAYi3w",
 						"description": ""
 					}
 				],
@@ -118,7 +123,13 @@
 			"request": {
 				"url": "http://localhost:8080/api/candidates/status/4",
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTA0MjYwMDEwMSwiZXhwZGF0ZSI6MTUzOTEyOTAwMDEwMX0.ccjKam5izZE6OnxMfrk4WwPbDVooJ6vNKmh8emg3DBt-I7CUlbcaH07EKamyBFb2Ci8A0Kl_3inl22FwmAYi3w",
+						"description": ""
+					}
+				],
 				"body": {},
 				"description": ""
 			},
@@ -129,7 +140,30 @@
 			"request": {
 				"url": "http://localhost:8080/api/reports/candidate",
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTA0MjYwMDEwMSwiZXhwZGF0ZSI6MTUzOTEyOTAwMDEwMX0.ccjKam5izZE6OnxMfrk4WwPbDVooJ6vNKmh8emg3DBt-I7CUlbcaH07EKamyBFb2Ci8A0Kl_3inl22FwmAYi3w",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ChangeCaseStatusForUser",
+			"request": {
+				"url": "http://localhost:8080/api/candidates/3/newStatus/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJyZW1lbWJlciI6ZmFsc2UsInN1YiI6Im1hbmFnZXIxQGdtYWlsLmNvbSIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTUzOTA0MzkzMTE3OCwiZXhwZGF0ZSI6MTUzOTEzMDMzMTE3OX0.SxyM54tC-LIvzvamR5yK_gG22hX3NiFr-P74yJv7FSbv50IfzDNQAFmtRc3euN0Cai8EVbvyZIMQIxffwii_yw",
+						"description": ""
+					}
+				],
 				"body": {},
 				"description": ""
 			},

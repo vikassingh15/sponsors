@@ -45,5 +45,4 @@ public class CustomUserDetailsService implements UserDetailsService {
 
 		return new CustomUserDetail(email, user.getPassword(), objAuthorities, user);
 	}
-
 }

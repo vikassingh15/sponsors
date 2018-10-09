@@ -1,8 +1,12 @@
-package com.sponsors.security;
+package com.sponsors;
 
+import com.sponsors.security.AuthenticationTokenProcessingFilter;
+import com.sponsors.security.CustomUserDetailsService;
 import com.sponsors.security.tokenStore.TokenStoreService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -15,8 +19,10 @@ import org.springframework.security.web.access.intercept.FilterSecurityIntercept
 
 @Configuration
 @EnableWebSecurity
+@ComponentScan(basePackageClasses = CustomUserDetailsService.class)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+	@Qualifier("customUserDetailsService")
 	@Autowired
 	private UserDetailsService userDetailsService;
 
@@ -34,11 +40,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/","/u/login")
 				.permitAll();
 
-//		http.authorizeRequests()
-//				.antMatchers("/api/**")
-//				.access("hasAnyRole('SPONSOR_MANAGERS','SPONSOR_OFFICERS', 'SPONSOR_RECIPIENT')");
-
-	//	http.authorizeRequests().antMatchers("/api/sponsor/**").hasRole("SPONSOR_MANAGERS").anyRequest().authenticated();
+		http.authorizeRequests()
+				.antMatchers("/api/**")
+				.hasAnyAuthority("SPONSOR_MANAGERS","SPONSOR_OFFICERS","SPONSOR_RECIPIENT")
+				.anyRequest()
+				.authenticated();
 
 		http.csrf().disable().addFilterBefore(authenticationTokenProcessingFilter(), FilterSecurityInterceptor.class);
 		http.headers().frameOptions().disable();

@@ -5,7 +5,7 @@ public class NotAcceptableException extends BaseException {
 	private static final long serialVersionUID = 1L;
 
 	public NotAcceptableException(NotAcceptable notFound) {
-		super(4090101, notFound.getStatusCode(), notFound.getErrorMessage(), notFound.getDeveloperMessage());
+		super(409, notFound.getStatusCode(), notFound.getErrorMessage(), notFound.getDeveloperMessage());
 	}
 
 	public enum NotAcceptable {

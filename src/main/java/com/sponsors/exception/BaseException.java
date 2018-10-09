@@ -1,5 +1,7 @@
 package com.sponsors.exception;
 
+import com.sponsors.dto.ErrorDto;
+
 public class BaseException extends RuntimeException{
 	private static final long serialVersionUID = 1L;
 	
@@ -32,4 +34,9 @@ public class BaseException extends RuntimeException{
 	public String getDeveloperMessage() {
 		return developerMessage;
 	}
+
+	public ErrorDto createErrorDto() {
+		return new ErrorDto(errorMessage,errorCode,developerMessage);
+	}
+
 }
