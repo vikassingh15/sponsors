@@ -11,3 +11,4 @@ Please check the document folder.
    You need to use login api to get authentication token to access any other api.
    You can find user details from users table, Password is default "password" for all users.
 5. Authorization is the header name, we need to use to access all restricted api.
+6. Documentation.docx is placed in documents folder, where you can find more details.
